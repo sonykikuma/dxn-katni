@@ -79,9 +79,9 @@ const Navbar = () => {
               </div>
             </div>
             <div className="border-b border-gray-300 my-4">
-              <p className="w-[85%] md:w-[90%] py-4">
+              <p className="w-[85%] md:w-[90%] py-4  text-orange-800">
                 {" "}
-                let&apos;s build something legendry together
+                "Health is Wealth" Healthy People, Healthy Nation
               </p>
             </div>
           </div>

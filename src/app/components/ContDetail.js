@@ -16,14 +16,14 @@ const ContDetail = () => {
         <p className="italic font-bold text-gray-700 dark:text-gray-400">
           Stockist Katni{" "}
         </p>
-        <p className="flex mt-10">
+        <p className="flex mt-10 text-white">
           {" "}
           <span>
             <FaMobile size={30} className="text-blue-400 cursor-pointer" />
           </span>
           9329452338
         </p>
-        <p className="flex items-center mt-10">
+        <p className="flex items-center mt-10 text-white">
           {" "}
           <span>
             <FaAddressCard
