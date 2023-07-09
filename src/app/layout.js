@@ -1,9 +1,22 @@
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import "./globals.css";
+import dynamic from "next/dynamic";
+
 import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
+
+// Fixes: Hydration failed because the initial UI does not match what was rendered on the server.
+// const DynamicContextProvider = dynamic(
+//   () =>
+//     import("@components/ContextProvider/ContextProvider").then(
+//       (mod) => mod.ContextProvider
+//     ),
+//   {
+//     ssr: false,
+//   }
+// );
 
 export const metadata = {
   title: "DXN KATNI",
@@ -13,7 +26,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }

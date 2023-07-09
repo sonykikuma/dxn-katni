@@ -38,7 +38,7 @@ const Main = () => {
   };
 
   return (
-    <div className="max-w-[1400px] h-[780px] w-full m-auto py-16 px-4 relative group-visited:">
+    <div className="bg-gradient-to-r from-indigo-400 via-purple-100 to-sky-200 max-w-[1400px] h-[780px] w-full m-auto py-12 px-4 relative group-visited:">
       <div
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
         className="w-full h-full rounded-2xl bg-center bg-cover duration-500"
